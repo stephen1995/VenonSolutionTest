@@ -1,0 +1,85 @@
+00:14:39.309 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:14:39.631 request:
+1 > GET https://api.hubapi.com/automation/v2/workflows/enrollments/contacts/2637?hapikey=demo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.hubapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.8)
+
+00:14:40.063 response time in milliseconds: 430.44
+1 < 200
+1 < Access-Control-Allow-Credentials: false
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-Ray: 664bb6ae8d1336e7-LIM
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Fri, 25 Jun 2021 05:14:40 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=iZ%2BWwyFaAbY28iPYPwfdjPRXhR7Qc%2BQQaHY8ovTU7kQvWuOfdl%2F55GTOAdNP3DDolriRlbdoW5yHJ1FtaP%2BIr0h6pEEYsN6XJ8%2Fc4eOumV3eiXcvH5Bb3lUFKA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < X-HubSpot-Correlation-Id: 3440b9b1-d69d-4853-b455-cc728777a97c
+1 < X-HubSpot-RateLimit-Daily: 1000000
+1 < X-HubSpot-RateLimit-Daily-Remaining: 999823
+1 < X-HubSpot-RateLimit-Interval-Milliseconds: 10000
+1 < X-HubSpot-RateLimit-Max: 200
+1 < X-HubSpot-RateLimit-Remaining: 199
+1 < X-HubSpot-RateLimit-Secondly: 20
+1 < X-HubSpot-RateLimit-Secondly-Remaining: 19
+1 < X-Trace: 2BCE418F09FBD8C8AFA4632A9DC13D55AD17F566DC000000000000000000
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < cf-request-id: 0ae330811a000036e72d2d5000000001
+[]
+
+00:14:40.074 request:
+1 > POST http://dummy.restapiexample.com/api/v1/create?hapikey=demo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.8)
+{"name":"test","salary":"123","age":"23"}
+
+00:14:41.224 response time in milliseconds: 1148.77
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 664bb6b19fe7f7e6-EZE
+1 < Cache-Control: no-cache, private, max-age=31536000
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 25 Jun 2021 05:14:41 GMT
+1 < Display: staticcontent_sol, staticcontent_sol
+1 < Expires: Sat, 25 Jun 2022 05:14:40 GMT
+1 < Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: 
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=IGLlSXNPQAzJDtm%2Bwd9F5Tynv1KWcYqo4dgFBJuSeWbI1PdciVHTrCVrV%2B5gj3b9Zb3nOINAwuebyAaefpAg2RYO4EZfczghPewiSWAH3Z3dLbqgG53tt%2FIr9f0oCfqKpzyQrz9M"}],"group":"cf-nel","max_age":604800}
+1 < Response: 200
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Accept-Encoding,Origin]
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Display: staticcontent_sol, staticcontent_sol
+1 < X-Middleton-Response: 200
+1 < X-Ratelimit-Limit: 60
+1 < X-Ratelimit-Remaining: 58
+1 < X-Sol: pub_site
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < cf-request-id: 0ae33083080000f7e63f24f000000001
+{"status":"success","data":{"name":"test","salary":"123","age":"23","hapikey":"demo","id":7479},"message":"Successfully! Record has been added."}
+
+}
+
+
+
+23:56:37.466 status code was: 200, expected: 201, response time: 917, url: http://dummy.restapiexample.com/api/v1/create?hapikey=demo, response: {"data":{"hapikey":"demo","name":"test","id":4010,"salary":"123","age":"23"},"message":"Successfully! Record has been added.","status":"success"}
+fb-4ce2-bfe9-c667041f9321"}
+
+23:48:38.745 status code was: 403, expected: 201, response time: 388, url: https://api.hubapi.com/automation/v3/workflows?hapikey=demo, response: {"correlationId":"955dc7d4-6cfb-4ce2-bfe9-c667041f9321","message":"Only GET requests can be made to HubSpot's demo account. You can create a test account to try other methods (https://developers.hubspot.com/docs/faq/how-do-i-create-a-test-account).","status":"error"}
+6-16T06:22:08+00:00","profile_photo":null,"team_id":null,"created_at":"2020-06-16T06:22:08+00:00","updated_at":"2020-06-16T06:22:08+00:00","last_message_at":null,"profession_title":null,"profession_department":null,"primary_email":null,"primary_phone":null,"mailing_address":null,"primary_address":null,"owned_by":556397,"updated_by":556397,"custom_fields":[],"ownership_type":1,"timeframe":null,"timeframe_start":null,"timeframe_end":null,"seller_listing_address":null,"buyer_price_min":null,"buyer_price_max":null,"preferred_zips":null,"preferred_neighborhoods":null,"preferred_contact_by":"","is_associated":false},"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817","prev":"https:\/\/kong-internal.kw-qa-us-east1.kw.com\/v2\/contacts\/517252","next":"https:\/\/kong-internal.kw-qa-us-east1.kw.com\/v2\/contacts"},"relationships":{"addresses":{"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/relationships\/addresses","related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/addresses"},"data":[]},"emails":{"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/relationships\/emails","related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/emails"},"data":[]},"family":{"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/relationships\/family","related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/family"},"data":[]},"object-custom-fields":{"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/relationships\/object-custom-fields","related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/object-custom-fields"},"data":[]},"phones":{"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/relationships\/phones","related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/phones"},"data":[]},"social-accounts":{"links":{"self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/relationships\/social-accounts","related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044817\/social-accounts"},"data":[]}}}}
+
+01:20:27.003 assertion failed: path: $, actual: {"data":{"relationships":{"emails":{"data":[],"links":{"related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/emails","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/relationships\/emails"}},"addresses":{"data":[],"links":{"related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/addresses","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/relationships\/addresses"}},"phones":{"data":[],"links":{"related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/phones","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/relationships\/phones"}},"social-accounts":{"data":[],"links":{"related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/social-accounts","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/relationships\/social-accounts"}},"object-custom-fields":{"data":[],"links":{"related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/object-custom-fields","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/relationships\/object-custom-fields"}},"family":{"data":[],"links":{"related":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/family","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814\/relationships\/family"}}},"attributes":{"primary_motivation_note":null,"prefix":"","ownership_type":1,"language":"en","team_id":null,"suffix":"","primary_phone":null,"preferred_neighborhoods":null,"buyer_price_min":null,"is_pre_approved":false,"phase":1,"pre_approved_amount":null,"background_info":"","last_mns_view":null,"profile_photo":null,"custom_fields":[],"owned_by":556397,"buyer_price_max":null,"seller_listing_address":null,"mailing_address":null,"is_starred":false,"last_contact_date":null,"date_of_creation":"2020-06-16T06:20:26+00:00","updated_by":556397,"initial_contact_date":null,"last_message_at":null,"lead_type":null,"preferred_name":"NEW CONTACT","status":null,"timeframe_start":null,"is_primary":false,"timeframe_end":null,"date_of_birth":null,"primary_address":null,"created_at":"2020-06-16T06:20:26+00:00","preferred_zips":null,"uid":null,"contact_types":[],"timeframe":null,"motivations":[],"profession_title":null,"updated_at":"2020-06-16T06:20:26+00:00","profession_department":null,"legal_name":"","first_name":"NEW","is_connected":null,"is_associated":false,"buyer_type":null,"last_name":"CONTACT","middle_name":"","next_follow_up_date":null,"preferred_contact_by":"","number_in_household":null,"available_to_contact_date":null,"stage":null,"primary_email":null},"links":{"next":"https:\/\/kong-internal.kw-qa-us-east1.kw.com\/v2\/contacts","prev":"https:\/\/kong-internal.kw-qa-us-east1.kw.com\/v2\/contacts\/517252","self":"https:\/\/qa-kong.command-api.kw.com\/v2\/contacts\/4044814"},"id":"4044814","type":"contacts"}}, expected: {first_name=NEW}, reason: all key-values did not match, expected has un-matched keys: [first_name]
