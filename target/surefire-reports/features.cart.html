@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>features.cart</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-08-31 01:52:05 p.m.</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1.1:19]">[1.1:19] Add a pet </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/cart.feature</span><span class="feature-description">OlliePets</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:19]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">Ra</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:19]</span><span class="scenario-name">Add a pet </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 3580</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:19]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url "http://staging-api.myollie.com/api/v3/"</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">13:52:01.804 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def loginFeature = call read("login.feature")</div>
+                        </div>
+                        <div class="time-cell passed">1350</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="2.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">features/login.feature</div>
+                        </div>
+                        <div class="time-cell passed">1340</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url "http://staging-api.myollie.com/api/v3/"</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def loginPayload = read("jsonFiles/login.json")</div>
+                        </div>
+                        <div class="time-cell passed">86</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path "auth/cxlogin/"</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request loginPayload</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1239</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">13:52:02.193 request:
+1 &gt; POST http://staging-api.myollie.com/api/v3/auth/cxlogin/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 35
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: staging-api.myollie.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"password":"2.!RHV2tF@8Qt6Z7h3oZ"}
+
+13:52:02.440 response time in milliseconds: 244.89
+1 &lt; 307
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 185
+1 &lt; Content-Type: text/html
+1 &lt; Date: Wed, 31 Aug 2022 18:52:02 GMT
+1 &lt; Location: https://staging-api.myollie.com/api/v3/auth/cxlogin/
+1 &lt; Server: CloudFront
+1 &lt; Via: 1.1 ef3100c3f2434fd3889627d60775da30.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Id: fRmboAT_kgbjIRxe2QACC4SePDL3tsXGc9ACQgpNaay3xr5qanzHXA==
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Cache: Redirect from cloudfront
+&lt;html&gt;&#13;
+&lt;head&gt;&lt;title&gt;307 Temporary Redirect&lt;/title&gt;&lt;/head&gt;&#13;
+&lt;body bgcolor="white"&gt;&#13;
+&lt;center&gt;&lt;h1&gt;307 Temporary Redirect&lt;/h1&gt;&lt;/center&gt;&#13;
+&lt;hr&gt;&lt;center&gt;CloudFront&lt;/center&gt;&#13;
+&lt;/body&gt;&#13;
+&lt;/html&gt;&#13;
+
+
+13:52:02.443 request:
+2 &gt; POST http://staging-api.myollie.com/api/v3/auth/cxlogin/
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 35
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: staging-api.myollie.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"password":"2.!RHV2tF@8Qt6Z7h3oZ"}
+
+13:52:03.176 response time in milliseconds: 732.86
+2 &lt; 200
+2 &lt; Allow: POST, OPTIONS
+2 &lt; Connection: keep-alive
+2 &lt; Content-Length: 377
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 31 Aug 2022 18:52:03 GMT
+2 &lt; Server: gunicorn/20.0.4
+2 &lt; Vary: Cookie, Origin
+2 &lt; Via: 1.1 8a771ca27e5a3c9e06b12b7af5d25aa4.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Id: yp8hhw_hCy3gocROlX82T4TsM0DOODvM3hAAgPxWlZLkPP8TBEiaTQ==
+2 &lt; X-Amz-Cf-Pop: MIA3-C3
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; X-Frame-Options: SAMEORIGIN
+{"user_id":309294114066662939984171598352935445865,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZThhZmUxMmMtZDVhNC00M2E1LWI5Y2UtYzc2YzlhMDI2NTY5IiwiZXhwIjoxNjc3Njk2NzIzLCJpYXQiOjE2NjE5NzE5MjMsImF1ZCI6Im9sbGllX3BldHM6YXV0aGVudGljYXRpb24iLCJleHRyYV9kYXRhIjp7InR5cGUiOiJhdXRoZW50aWNhdGlvbiIsImdyb3VwIjoiQ1gifX0.MLFVSzOBe09B6Yjj1S76eBK8aqWJ0_F8T6Is_Ct6jFs"}</div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def access_token = response.access_token</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:19]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-cell passed">* def token = loginFeature.access_token</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">Given path "customers/2723246/cart/"</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">And header Authorization = "Bearer " + token</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">2215</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">13:52:03.198 request:
+1 &gt; GET http://staging-api.myollie.com/api/v3/customers/2723246/cart/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZThhZmUxMmMtZDVhNC00M2E1LWI5Y2UtYzc2YzlhMDI2NTY5IiwiZXhwIjoxNjc3Njk2NzIzLCJpYXQiOjE2NjE5NzE5MjMsImF1ZCI6Im9sbGllX3BldHM6YXV0aGVudGljYXRpb24iLCJleHRyYV9kYXRhIjp7InR5cGUiOiJhdXRoZW50aWNhdGlvbiIsImdyb3VwIjoiQ1gifX0.MLFVSzOBe09B6Yjj1S76eBK8aqWJ0_F8T6Is_Ct6jFs
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: staging-api.myollie.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+13:52:03.358 response time in milliseconds: 159.57
+1 &lt; 301
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 183
+1 &lt; Content-Type: text/html
+1 &lt; Date: Wed, 31 Aug 2022 18:52:03 GMT
+1 &lt; Location: https://staging-api.myollie.com/api/v3/customers/2723246/cart/
+1 &lt; Server: CloudFront
+1 &lt; Via: 1.1 0bca35acf826729de8b75fb344bf9f44.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Id: QgCGFqcqgmA0_jfLjLxuD5b58inNm-ZEz8uzImh3Oc77wo6-AJBbqA==
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Cache: Redirect from cloudfront
+&lt;html&gt;&#13;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#13;
+&lt;body bgcolor="white"&gt;&#13;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#13;
+&lt;hr&gt;&lt;center&gt;CloudFront&lt;/center&gt;&#13;
+&lt;/body&gt;&#13;
+&lt;/html&gt;&#13;
+
+
+13:52:03.359 request:
+2 &gt; GET http://staging-api.myollie.com/api/v3/customers/2723246/cart/
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZThhZmUxMmMtZDVhNC00M2E1LWI5Y2UtYzc2YzlhMDI2NTY5IiwiZXhwIjoxNjc3Njk2NzIzLCJpYXQiOjE2NjE5NzE5MjMsImF1ZCI6Im9sbGllX3BldHM6YXV0aGVudGljYXRpb24iLCJleHRyYV9kYXRhIjp7InR5cGUiOiJhdXRoZW50aWNhdGlvbiIsImdyb3VwIjoiQ1gifX0.MLFVSzOBe09B6Yjj1S76eBK8aqWJ0_F8T6Is_Ct6jFs
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: staging-api.myollie.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+13:52:05.411 response time in milliseconds: 2051.43
+2 &lt; 200
+2 &lt; Allow: GET, PUT, DELETE, HEAD, OPTIONS
+2 &lt; Connection: keep-alive
+2 &lt; Content-Length: 652
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 31 Aug 2022 18:52:05 GMT
+2 &lt; ETag: "b2f1b62b4bb712398a0582c3447a00d5"
+2 &lt; Server: gunicorn/20.0.4
+2 &lt; Vary: Cookie, Origin
+2 &lt; Via: 1.1 72aa1f6d307a536bbaffdcdb498b124c.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Id: bMOVXnOTYbPDkW468XCj6cBaipt3aMIt7LvEFbT_Ns5ZyeGFwgZNeQ==
+2 &lt; X-Amz-Cf-Pop: MIA3-C3
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; X-Frame-Options: SAMEORIGIN
+{"cart_id":"2b17e126-e2ce-477d-8c1c-a8f6d75e8988","subtotal":"0.00","total_tax":"0.00","total":"0.00","total_discount":"0.00","delivery_date":"2022-09-02","line_items":[{"sku":"WelKit-V20210810:7","quantity":3,"pet_id":"b2401b25-acf1-4d36-a677-e261010d60f8","price":"0.00","discounted_price":"0.00","total_discount":"0.00","feeding_guidelines":null,"pet_name":"Test3","recipes":null}],"coupon_code":null,"transit_option":{"id":"f66c8fc4-fdc2-4fb5-9c07-e01764502479","description":"[NV FC -&gt; 99343 via FedEx Ground(Ground) 2 DIT Tu.We.Th.Fr]","carrier":"FedEx Ground (Ground)","days_in_transit":2,"destination_zip":"99343","fulfillment_center":"NV FC"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">And print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="15">13:52:05.412 [print] {
+  "cart_id": "2b17e126-e2ce-477d-8c1c-a8f6d75e8988",
+  "total": "0.00",
+  "delivery_date": "2022-09-02",
+  "total_discount": "0.00",
+  "coupon_code": null,
+  "subtotal": "0.00",
+  "line_items": [
+    {
+      "recipes": null,
+      "pet_name": "Test3",
+      "quantity": 3,
+      "total_discount": "0.00",
+      "feeding_guidelines": null,
+      "price": "0.00",
+      "sku": "WelKit-V20210810:7",
+      "pet_id": "b2401b25-acf1-4d36-a677-e261010d60f8",
+      "discounted_price": "0.00"
+    }
+  ],
+  "total_tax": "0.00",
+  "transit_option": {
+    "carrier": "FedEx Ground (Ground)",
+    "fulfillment_center": "NV FC",
+    "days_in_transit": 2,
+    "destination_zip": "99343",
+    "description": "[NV FC -&gt; 99343 via FedEx Ground(Ground) 2 DIT Tu.We.Th.Fr]",
+    "id": "f66c8fc4-fdc2-4fb5-9c07-e01764502479"
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">* def cartId = response.cart_id</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

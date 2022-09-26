@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>features.login</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-08-31 01:52:30 p.m.</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:6]">[1:6] Login to Ollie Pets </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/login.feature</span><span class="feature-description">ADD PET</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:6]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">login</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Login to Ollie Pets </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1112</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:6]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:6]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url "http://staging-api.myollie.com/api/v3/"</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">13:52:29.611 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1:6]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def loginPayload = read("jsonFiles/login.json")</div>
+                        </div>
+                        <div class="time-cell passed">40</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given path "auth/cxlogin/"</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And request loginPayload</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1058</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">13:52:29.887 request:
+1 &gt; POST http://staging-api.myollie.com/api/v3/auth/cxlogin/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 35
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: staging-api.myollie.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"password":"2.!RHV2tF@8Qt6Z7h3oZ"}
+
+13:52:30.091 response time in milliseconds: 203.24
+1 &lt; 307
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 185
+1 &lt; Content-Type: text/html
+1 &lt; Date: Wed, 31 Aug 2022 18:52:30 GMT
+1 &lt; Location: https://staging-api.myollie.com/api/v3/auth/cxlogin/
+1 &lt; Server: CloudFront
+1 &lt; Via: 1.1 177fd0f8c3e2c78883d72714aa07183a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Id: 1G-LbXrICO69n73_iIyYZzdMTMYNCJDg9iqZzQtWM11sdKGAweTz4A==
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Cache: Redirect from cloudfront
+&lt;html&gt;&#13;
+&lt;head&gt;&lt;title&gt;307 Temporary Redirect&lt;/title&gt;&lt;/head&gt;&#13;
+&lt;body bgcolor="white"&gt;&#13;
+&lt;center&gt;&lt;h1&gt;307 Temporary Redirect&lt;/h1&gt;&lt;/center&gt;&#13;
+&lt;hr&gt;&lt;center&gt;CloudFront&lt;/center&gt;&#13;
+&lt;/body&gt;&#13;
+&lt;/html&gt;&#13;
+
+
+13:52:30.095 request:
+2 &gt; POST http://staging-api.myollie.com/api/v3/auth/cxlogin/
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 35
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: staging-api.myollie.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"password":"2.!RHV2tF@8Qt6Z7h3oZ"}
+
+13:52:30.724 response time in milliseconds: 628.56
+2 &lt; 200
+2 &lt; Allow: POST, OPTIONS
+2 &lt; Connection: keep-alive
+2 &lt; Content-Length: 377
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 31 Aug 2022 18:52:30 GMT
+2 &lt; Server: gunicorn/20.0.4
+2 &lt; Vary: Cookie, Origin
+2 &lt; Via: 1.1 c8ee9137ed6341821e410f1ccbd20d4c.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Id: NkcEH_bJP10-cR_LbEXOuakh7YFGVEZLwpGISNmWm2EN71DF5ybFMg==
+2 &lt; X-Amz-Cf-Pop: MIA3-C3
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; X-Frame-Options: SAMEORIGIN
+{"user_id":309294114066662939984171598352935445865,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZThhZmUxMmMtZDVhNC00M2E1LWI5Y2UtYzc2YzlhMDI2NTY5IiwiZXhwIjoxNjc3Njk2NzUwLCJpYXQiOjE2NjE5NzE5NTAsImF1ZCI6Im9sbGllX3BldHM6YXV0aGVudGljYXRpb24iLCJleHRyYV9kYXRhIjp7InR5cGUiOiJhdXRoZW50aWNhdGlvbiIsImdyb3VwIjoiQ1gifX0.y7tWN-Vyryo9DkoDuvtXJPSwBRyoy26R1C5rKlU979A"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* def access_token = response.access_token</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
