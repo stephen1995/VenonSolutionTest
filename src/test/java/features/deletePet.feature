@@ -2,7 +2,7 @@
 Feature: Get Pet
 
   Background: 
-    * url "https://petstore.swagger.io/v2/"
+    * url "https://petstore3.swagger.io/api/v3"
 
   Scenario: Add a pet
     Given path "pet/findByStatus"
