@@ -19,7 +19,8 @@ Reporting:
 
  For performance testing:
 -
-- We can use a new feature from postman which allows you to test performance using ramp up, skipe, fixed, peak features :
+- We can use a new feature from postman which allows you to test performance using ramp up, skipe, fixed, peak features:
+  
 ![image](https://github.com/stephen1995/VenonSolutionTest/assets/17716677/26d32361-cf2b-46be-a62b-2ecd7e355ee9)
 
 ![image](https://github.com/stephen1995/VenonSolutionTest/assets/17716677/5453c3d6-265b-4dcf-b6a3-31e854bcbfeb)
